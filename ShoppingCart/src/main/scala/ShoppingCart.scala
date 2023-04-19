@@ -14,9 +14,9 @@ object Item {
   case class AppleOffer() extends Item {
     val price: Double = 0.0
 
-    def applyOffer(items: List[String]): List[String] = {
+    def applyOffer(items: List[Item]): List[Item] = {
       items.zipWithIndex.collect {
-        case ("Apple", index) if index % 2 == 1 => None
+        case (Apple, index) if index % 2 == 1 => None
         case (item, _) => Some(item)
       }.flatten
     }
@@ -25,9 +25,9 @@ object Item {
   case class OrangeOffer() extends Item {
     val price: Double = 0.0
 
-    def applyOffer(items: List[String]): List[String] = {
+    def applyOffer(items: List[Item]): List[Item] = {
       items.zipWithIndex.collect {
-        case ("Orange", index) if (index + 1) % 3 == 0 => None
+        case (Orange, index) if (index + 1) % 3 == 0 => None
         case (item, _) => Some(item)
       }.flatten
     }
@@ -35,10 +35,10 @@ object Item {
 
   class ShoppingCart {
     def calculateTotalCost(items: List[Item]): Double = {
-      val itemsAfterDiscounts = (new AppleOffer().applyOffer(items.map(_.toString)) ++ new OrangeOffer().applyOffer(items.map(_.toString))).toList
+      val itemsAfterDiscounts = (new AppleOffer().applyOffer(items) ++ new OrangeOffer().applyOffer(items)).toList
       val itemPrices = itemsAfterDiscounts.map {
-        case "Apple" => Item.Apple.price
-        case "Orange" => Item.Orange.price
+        case Apple => Apple.price
+        case Orange => Orange.price
         case _ => 0.0 // Handle unknown items
       }
       itemPrices.sum
