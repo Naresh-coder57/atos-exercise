@@ -1,0 +1,151 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\NARESH\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\NARESH\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.8.2 (Oracle Corporation Java 15.0.2)
+[debug]       Load.loadUnit: plugins took 139.23ms
+[debug]       Load.loadUnit: defsScala took 0.308ms
+[debug] [Loading] Scanning directory C:\Users\NARESH\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\NARESH\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 24.5777 ms
+[debug]           Load.resolveProject(global-plugins) took 59.024499ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\NARESH\.sbt\1.0\plugins, plugins: List(<none>))) took 114.0494ms
+[debug] [Loading] Done in C:\Users\NARESH\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 148.598699ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.3103ms
+[debug]     Load.loadUnit(file:/C:/Users/NARESH/.sbt/1.0/plugins/, ...) took 300.0816ms
+[debug]   Load.apply: load took 513.838ms
+[debug]   Load.apply: resolveProjects took 8.901099ms
+[debug]   Load.apply: finalTransforms took 100.0143ms
+[debug]   Load.apply: config.delegates took 12.5749ms
+[debug]   Load.apply: Def.make(settings)... took 669.3941ms
+[debug]   Load.apply: structureIndex took 149.351701ms
+[debug]   Load.apply: mkStreams took 1.829801ms
+[info] loading global plugins from C:\Users\NARESH\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 7087.2303ms
+[debug]           Load.loadUnit: plugins took 41.2914ms
+[debug]           Load.loadUnit: defsScala took 0.0044ms
+[debug] [Loading] Scanning directory C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart\project
+[debug]             Load.loadUnit: mkEval took 6.854ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 4.1425 ms
+[info] loading settings for project shoppingcart-build from plugins.sbt,idea.sbt ...
+[debug]               Load.resolveProject(shoppingcart-build) took 10.512ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id shoppingcart-build, base: C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart\project, plugins: List(<none>))) took 21.7615ms
+[debug] [Loading] Done in C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart\project, returning: (shoppingcart-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 7093.790699ms
+[debug]           Load.loadUnit: cleanEvalClasses took 34.898001ms
+[debug]         Load.loadUnit(file:/C:/Users/NARESH/IdeaProjects/CI-CD%20pipeline/practice/ShoppingCart/project/, ...) took 7171.574701ms
+[debug]       Load.apply: load took 7177.4001ms
+[debug]       Load.apply: resolveProjects took 0.894599ms
+[debug]       Load.apply: finalTransforms took 26.8913ms
+[debug]       Load.apply: config.delegates took 0.4329ms
+[debug]       Load.apply: Def.make(settings)... took 137.742399ms
+[debug]       Load.apply: structureIndex took 64.082199ms
+[debug]       Load.apply: mkStreams took 0.0026ms
+[info] loading project definition from C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[warn] Unrecognized repository Scala Plugin Bundled Repository, ignoring it
+[debug]     Load.loadUnit: plugins took 15665.4484ms
+[debug]     Load.loadUnit: defsScala took 0.0086ms
+[debug] [Loading] Scanning directory C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart
+[debug]       Load.loadUnit: mkEval took 0.6584ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbtide.ConfigPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 2.234999 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 117.1099ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart, plugins: List(<none>))) took 128.448099ms
+[debug] [Loading] Done in C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 6357.716899ms
+[debug]     Load.loadUnit: cleanEvalClasses took 84.5597ms
+[debug]   Load.loadUnit(file:/C:/Users/NARESH/IdeaProjects/CI-CD%20pipeline/practice/ShoppingCart/, ...) took 22110.406201ms
+[debug] Load.apply: load took 22121.1898ms
+[debug] Load.apply: resolveProjects took 0.328101ms
+[debug] Load.apply: finalTransforms took 98.025999ms
+[debug] Load.apply: config.delegates took 1.766401ms
+[debug] Load.apply: Def.make(settings)... took 287.1906ms
+[debug] Load.apply: structureIndex took 79.4097ms
+[debug] Load.apply: mkStreams took 0.0027ms
+[info] set current project to ShoppingCart (in build file:/C:/Users/NARESH/IdeaProjects/CI-CD%20pipeline/practice/ShoppingCart/)
+[warn] there's a key that's not used by any other settings/tasks:
+[warn]  
+[warn] * root / idePackagePrefix
+[warn]   +- C:\Users\NARESH\IdeaProjects\CI-CD pipeline\practice\ShoppingCart\build.sbt:8
+[warn]  
+[warn] note: a setting might still be used by a command; to exclude a key from this `lintUnused` check
+[warn] either append it to `Global / excludeLintKeys` or call .withRank(KeyRanks.Invisible) on the key
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 50668 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 50668, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to ShoppingCart (in build file:/C:/Users/NARESH/IdeaProjects/CI-CD%20pipeline/practice/ShoppingCart/)
+[debug] > Exec(idea-shell, None, None)
