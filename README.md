@@ -24,4 +24,4 @@ IntelliJ IDEA latest,
 
 and SBT. 
 
-Compile the application by running "sbt clean" and "sbt run". Run the test cases using "sbt test" in the terminal.
+Compile the application by running "sbt clean" and "sbt compile". Run the test cases using "sbt test" in the terminal.
