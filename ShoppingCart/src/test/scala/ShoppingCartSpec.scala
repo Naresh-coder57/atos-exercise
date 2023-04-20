@@ -1,37 +1,24 @@
-package com.atos.exercise
+import org.scalatest.funsuite.AnyFunSuite
 
-import org.scalatest.flatspec.AnyFlatSpec
-import org.scalatest.matchers.should.Matchers
+class ShoppingCartSpec extends AnyFunSuite {
 
-class ShoppingCartSpec extends AnyFlatSpec with Matchers {
-  "ShoppingCart" should "return the correct total cost for an empty list of items" in {
-    val cart = new Item.ShoppingCart()
-    val items = List.empty[Item.Item]
-    cart.calculateTotalCost(items) shouldEqual 0.0
+  test("calculate total cost of items without offers") {
+    assert(ShoppingCart.calculateTotalCost(List("apple", "apple", "orange", "apple")) == 2.05)
+    assert(ShoppingCart.calculateTotalCost(List("orange", "orange", "orange")) == 0.75)
+    assert(ShoppingCart.calculateTotalCost(List("apple", "orange", "orange", "orange")) == 1.35)
+    assert(ShoppingCart.calculateTotalCost(List()) == 0)
   }
 
-  it should "return the correct total cost for a list of items with no discounts" in {
-    val cart = new Item.ShoppingCart()
-    val items = List(Item.Apple, Item.Orange, Item.Apple, Item.Orange)
-    cart.calculateTotalCost(items) shouldEqual 2.35
+  test("apply buy-one-get-one-free offer on Apples") {
+    assert(ShoppingCart.applyAppleOffer(List("apple", "apple", "orange", "apple")) == List("orange", "apple", "apple"))
+    assert(ShoppingCart.applyAppleOffer(List("apple", "orange", "apple")) == List("orange", "apple"))
+    assert(ShoppingCart.applyAppleOffer(List("apple", "apple", "apple")) == List("apple","apple"))
+    assert(ShoppingCart.applyAppleOffer(List("orange", "orange")) == List("orange", "orange"))
   }
 
-  it should "return the correct total cost for a list of items with an Apple offer" in {
-    val cart = new Item.ShoppingCart()
-    val items = List(Item.Apple, Item.Orange, Item.Apple, Item.Orange, Item.Apple)
-    cart.calculateTotalCost(items) shouldEqual 2.2
+  test("apply 3-for-2 offer on Oranges") {
+    assert(ShoppingCart.applyOrangeOffer(List("apple", "apple", "orange", "orange", "orange")) == List("apple", "apple", "orange", "orange"))
+    assert(ShoppingCart.applyOrangeOffer(List("orange", "orange", "orange")) == List("orange", "orange"))
+    assert(ShoppingCart.applyOrangeOffer(List("orange", "orange", "orange", "orange")) == List("orange", "orange","orange"))
   }
-
-  it should "return the correct total cost for a list of items with an Orange offer" in {
-    val cart = new Item.ShoppingCart()
-    val items = List(Item.Orange, Item.Orange, Item.Orange, Item.Apple, Item.Orange, Item.Orange)
-    cart.calculateTotalCost(items) shouldEqual 1.1
-  }
-
-  it should "return the correct total cost for a list of items with both offers" in {
-    val cart = new Item.ShoppingCart()
-    val items = List(Item.Orange, Item.Orange, Item.Orange, Item.Apple, Item.Orange, Item.Orange, Item.Apple)
-    cart.calculateTotalCost(items) shouldEqual 1.7
-  }
-  
 }
